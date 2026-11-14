@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techcyber | Your 24/7 Offshore IT MSP Partner</title>
+    <meta name="description" content="Elevate Your IT Operations with Seamless, 24/7/365 Enterprise-Grade Offshore Managed IT Services, Cybersecurity, Threat Hawk SIEM, and Clinical Healthcare IT.">
+    
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            50: '#f0f5fc',
+                            100: '#dce8f8',
+                            200: '#bdd4f2',
+                            300: '#8fb7e8',
+                            400: '#5992da',
+                            500: '#3573c9',
+                            600: '#2559aa',
+                            700: '#1f478a',
+                            800: '#1c3d72',
+                            900: '#0A2E65',
+                            950: '#061B3D',
+                        },
+                        brandOrange: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#F97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        }
+                    },
+                    boxShadow: {
+                        'enterprise': '0 10px 40px -10px rgba(10, 46, 101, 0.12)',
+                        'glow-orange': '0 10px 25px -5px rgba(249, 115, 22, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Enterprise Gradients & Subtle Grid Patterns */
+        .hero-bg {
+            background-color: #061B3D;
+            background-image: 
+                radial-gradient(circle at 85% 20%, rgba(249, 115, 22, 0.14) 0%, transparent 45%),
+                radial-gradient(circle at 15% 80%, rgba(37, 89, 170, 0.35) 0%, transparent 50%),
+                linear-gradient(135deg, #061B3D 0%, #0A2E65 55%, #0D3A7E 100%);
+        }
+        .cyber-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        }
+        .service-tab-btn.active {
+            background-color: #0A2E65;
+            color: #ffffff;
+            border-color: #0A2E65;
+            box-shadow: 0 4px 14px rgba(10, 46, 101, 0.25);
+        }
+        .service-tab-btn.active i {
+            color: #F97316;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0A2E65;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F97316;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brandOrange-500 selection:text-white">
+
+    <!-- Top Utility Bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    24/7/365 Global NOC & SOC Active
+                </span>
+                <span class="hidden sm:inline text-slate-500">|</span>
+                <span class="hidden sm:inline">HIPAA • PCI DSS • SOC 2 • CMMC Compliant</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://techcyber.cloud/" target="_blank" rel="noopener noreferrer" class="hover:text-brandOrange-400 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-globe text-brandOrange-500"></i>
+                    <span>techcyber.cloud</span>
+                </a>
+                <span class="text-slate-600">|</span>
+                <a href="mailto:techcybermsp@consultant.com" class="hover:text-brandOrange-400 transition-colors flex items-center gap-1.5 font-medium text-white">
+                    <i class="fa-solid fa-envelope text-brandOrange-500"></i>
+                    <span>techcybermsp@consultant.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Sticky Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Official Techcyber Logo -->
+                <a href="#" class="flex items-center gap-3 group focus:outline-none" aria-label="Techcyber Home">
+                    <!-- Crisp SVG Recreation of the Official Techcyber Shield & Wordmark -->
+                    <svg class="h-12 w-auto transition-transform duration-300 group-hover:scale-105" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Techcyber Official Logo">
+                        <!-- Shield Outer & Left T (Deep Navy #0A2E65) -->
+                        <path d="M12 24C34 12 62 7 82 7C102 7 128 12 148 22V33H134C116 25 97 22 82 22V73H66V22C50 23 35 27 25 32C25 60 44 82 80 94V107C34 93 12 64 12 24Z" fill="#0A2E65"/>
+                        <!-- Shield Right C (Vibrant Orange #F97316) -->
+                        <path d="M88 38H148V50H102V85C113 79 122 70 127 59H143C135 81 115 98 88 107V38Z" fill="#F97316"/>
+                        <!-- Wordmark: Tech (Orange) + cyber (Navy) -->
+                        <text x="162" y="72" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="37" letter-spacing="-0.8">
+                            <tspan fill="#F97316">Tech</tspan><tspan fill="#0A2E65">cyber</tspan>
+                        </text>
+                        <text x="164" y="92" font-family="'Inter', sans-serif" font-weight="700" font-size="9.5" letter-spacing="2.2" fill="#475569">
+                            GLOBAL IT MSP &amp; SOC
+                        </text>
+                    </svg>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-navy-900">
+                    <a href="#advantage" class="hover:text-brandOrange-500 transition-colors">About & Advantage</a>
+                    <a href="#services" class="hover:text-brandOrange-500 transition-colors">Global Services</a>
+                    <a href="#threat-hawk" class="hover:text-brandOrange-500 transition-colors flex items-center gap-1.5">
+                        <span>Threat Hawk SIEM</span>
+                        <span class="px-1.5 py-0.5 text-[10px] font-bold uppercase bg-brandOrange-100 text-brandOrange-600 rounded">AI</span>
+                    </a>
+                    <a href="#ecosystem" class="hover:text-brandOrange-500 transition-colors">Tech Stack</a>
+                    <a href="#pricing" class="hover:text-brandOrange-500 transition-colors">Pricing Models</a>
+                </nav>
+
+                <!-- Header CTA & Mobile Menu Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="#consultation" class="hidden sm:inline-flex items-center gap-2 bg-brandOrange-500 hover:bg-brandOrange-600 text-white text-sm font-bold px-5 py-2.5 rounded-lg shadow-glow-orange transition-all duration-200 transform hover:-translate-y-0.5">
+                        <span>Free Audit / Demo</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2.5 rounded-lg text-navy-900 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-xl">
+            <a href="#advantage" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-navy-900 hover:bg-navy-50">About & Advantage</a>
+            <a href="#services" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-navy-900 hover:bg-navy-50">Global Services (12 Domains)</a>
+            <a href="#threat-hawk" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-navy-900 hover:bg-navy-50">Threat Hawk Enterprise SIEM</a>
+            <a href="#ecosystem" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-navy-900 hover:bg-navy-50">Global Tech Ecosystem</a>
+            <a href="#pricing" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-navy-900 hover:bg-navy-50">Pricing & Engagement Models</a>
+            <div class="pt-2">
+                <a href="#consultation" class="mobile-nav-link block w-full text-center bg-brandOrange-500 hover:bg-brandOrange-600 text-white font-bold px-5 py-3 rounded-lg shadow-md">
+                    Schedule Free Audit / Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-bg cyber-grid relative overflow-hidden text-white pt-16 pb-20 lg:pt-24 lg:pb-28">
+        <!-- Decorative Abstract Shield Glow -->
+        <div class="absolute -right-24 -top-24 w-96 h-96 bg-brandOrange-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute left-1/3 bottom-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column: Core Messaging -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-sm text-xs sm:text-sm font-semibold text-brandOrange-300">
+                        <i class="fa-solid fa-shield-halved text-brandOrange-500"></i>
+                        <span>50+ Global Enterprise & Healthcare Partners Since 2023</span>
+                    </div>
+
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
+                        YOUR <span class="text-brandOrange-500">24/7</span> OFFSHORE <span class="text-brandOrange-500">IT MSP</span> PARTNER
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-200 max-w-2xl leading-relaxed font-normal">
+                        Elevate Your IT Operations with Seamless, 24/7/365 Enterprise-Grade Offshore Managed IT Services—combining continuous NOC/SOC defense, AI-powered SIEM, and certified clinical & cloud engineering.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="#consultation" class="inline-flex items-center justify-center gap-2.5 bg-brandOrange-500 hover:bg-brandOrange-600 text-white font-bold px-7 py-4 rounded-xl shadow-glow-orange transition-all duration-200 text-base">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <span>Schedule Your Complimentary Audit</span>
+                        </a>
+                        <a href="#services" class="inline-flex items-center justify-center gap-2.5 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-semibold px-7 py-4 rounded-xl backdrop-blur-sm transition-all duration-200 text-base">
+                            <span>Explore Global Services</span>
+                            <i class="fa-solid fa-chevron-down text-xs text-brandOrange-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Direct Contact Strip in Hero -->
+                    <div class="pt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-300">
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope-open-text text-brandOrange-400"></i>
+                            Direct Consultation:
+                            <a href="mailto:techcybermsp@consultant.com" class="font-bold text-white underline decoration-brandOrange-500 underline-offset-4 hover:text-brandOrange-300">
+                                techcybermsp@consultant.com
+                            </a>
+                        </span>
+                        <button onclick="copyEmail('hero-copy-badge')" class="inline-flex items-center gap-1.5 text-xs bg-white/10 hover:bg-white/20 px-2.5 py-1 rounded-md text-slate-200 transition-colors" title="Copy Email">
+                            <i class="fa-regular fa-copy"></i>
+                            <span id="hero-copy-badge">Copy Email</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Command Center / Operations Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-navy-900/90 border border-white/15 rounded-2xl p-6 sm:p-8 shadow-2xl backdrop-blur-md relative">
+                        <div class="flex items-center justify-between pb-5 mb-5 border-b border-white/10">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-brandOrange-500/20 border border-brandOrange-500/40 flex items-center justify-center text-brandOrange-400">
+                                    <i class="fa-solid fa-server text-lg"></i>
+                                </div>
+                                <div>
+                                    <h2 class="font-display font-bold text-white text-base">Global Operations Command</h2>
+                                    <p class="text-xs text-slate-400">Continuous Follow-the-Sun Delivery</p>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold">
+                                99.99% SLA
+                            </span>
+                        </div>
+
+                        <!-- 4 Key Hero Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-navy-950/70 border border-white/10 rounded-xl p-4">
+                                <div class="text-2xl sm:text-3xl font-extrabold text-brandOrange-500 font-display">24/7/365</div>
+                                <div class="text-xs font-semibold text-white mt-1">True Availability</div>
+                                <div class="text-[11px] text-slate-400 mt-0.5">Zero downtime shift coverage</div>
+                            </div>
+                            <div class="bg-navy-950/70 border border-white/10 rounded-xl p-4">
+                                <div class="text-2xl sm:text-3xl font-extrabold text-white font-display">50+</div>
+                                <div class="text-xs font-semibold text-brandOrange-400 mt-1">Global Partners</div>
+                                <div class="text-[11px] text-slate-400 mt-0.5">Trusted worldwide since 2023</div>
+                            </div>
+                            <div class="bg-navy-950/70 border border-white/10 rounded-xl p-4">
+                                <div class="text-2xl sm:text-3xl font-extrabold text-white font-display">Up to 60%</div>
+                                <div class="text-xs font-semibold text-brandOrange-400 mt-1">Cost Optimization</div>
+                                <div class="text-[11px] text-slate-400 mt-0.5">Reduced capital overhead</div>
+                            </div>
+                            <div class="bg-navy-950/70 border border-white/10 rounded-xl p-4">
+                                <div class="text-2xl sm:text-3xl font-extrabold text-brandOrange-500 font-display">&lt; 15m</div>
+                                <div class="text-xs font-semibold text-white mt-1">SOC/NOC Triage</div>
+                                <div class="text-[11px] text-slate-400 mt-0.5">Rapid certified engineering</div>
+                            </div>
+                        </div>
+
+                        <!-- Core Capabilities Checklist -->
+                        <div class="space-y-2.5 text-sm text-slate-200">
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brandOrange-500"></i>
+                                <span>24/7 Helpdesk, NOC & Threat Hawk AI SIEM</span>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brandOrange-500"></i>
+                                <span>Clinical Healthcare IT (EPIC, Cerner, HL7/FHIR)</span>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-circle-check text-brandOrange-500"></i>
+                                <span>Multi-Cloud, ERP/CRM & Zero-Trust Governance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. THE TECHCYBER ADVANTAGE (4 PILLARS) -->
+    <section id="advantage" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brandOrange-600 bg-brandOrange-50 px-3 py-1 rounded-full border border-brandOrange-200">
+                    The Techcyber Advantage
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-navy-900 mt-3">
+                    Why Leading Global Businesses Partner With Us
+                </h2>
+                <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                    We manage complex IT, clinical, and cybersecurity operations around the clock so your internal leadership can focus on strategic growth.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pillar 1 -->
+                <div class="bg-slate-50 hover:bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-brandOrange-400 shadow-sm hover:shadow-enterprise transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-900 text-brandOrange-500 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-navy-900 mb-2">Proven Track Record</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Trusted by <strong class="text-navy-900">50+ global partners since 2023</strong> across healthcare, finance, enterprise SaaS, and multi-site infrastructure.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-slate-50 hover:bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-brandOrange-400 shadow-sm hover:shadow-enterprise transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-navy-900 mb-2">Substantial Cost Savings</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Mature offshore infrastructure dramatically reduces capital and staffing overhead while maintaining strict enterprise SLAs.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-slate-50 hover:bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-brandOrange-400 shadow-sm hover:shadow-enterprise transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-navy-900 text-brandOrange-500 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-navy-900 mb-2">Dedicated Resource Teams</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Immediate deployment of certified engineering, cloud architecture, clinical EMR, and cybersecurity squads tailored to your stack.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-slate-50 hover:bg-white rounded-2xl p-7 border border-slate-200/90 hover:border-brandOrange-400 shadow-sm hover:shadow-enterprise transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-navy-900 mb-2">True 24/7/365 Availability</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Continuous follow-the-sun shift coverage guaranteeing zero unplanned downtime, rapid incident triage, and proactive monitoring.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. COMPREHENSIVE GLOBAL SERVICES (12 ENTERPRISE DOMAINS) -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-brandOrange-600 bg-brandOrange-100/80 px-3 py-1 rounded-full">
+                        End-to-End Worldwide Capabilities
+                    </span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-navy-900 mt-3">
+                        Comprehensive Global Managed IT Services
+                    </h2>
+                    <p class="text-slate-600 mt-2 max-w-2xl text-base">
+                        Filter across our core operational pillars or explore all 12 specialized enterprise service domains delivered worldwide.
+                    </p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="flex flex-wrap gap-2" role="tablist" aria-label="Filter Services by Category">
+                    <button type="button" onclick="filterServices('all', this)" class="service-tab-btn active px-4 py-2 rounded-lg text-xs sm:text-sm font-bold border border-slate-300 bg-white text-navy-900 transition-all">
+                        <i class="fa-solid fa-layer-group mr-1.5"></i>All Services (12)
+                    </button>
+                    <button type="button" onclick="filterServices('security', this)" class="service-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-bold border border-slate-300 bg-white text-navy-900 transition-all">
+                        <i class="fa-solid fa-shield-halved mr-1.5"></i>Cybersecurity & GRC
+                    </button>
+                    <button type="button" onclick="filterServices('healthcare', this)" class="service-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-bold border border-slate-300 bg-white text-navy-900 transition-all">
+                        <i class="fa-solid fa-heart-pulse mr-1.5"></i>Clinical Healthcare IT
+                    </button>
+                    <button type="button" onclick="filterServices('cloud', this)" class="service-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-bold border border-slate-300 bg-white text-navy-900 transition-all">
+                        <i class="fa-solid fa-cloud mr-1.5"></i>Cloud, AI & Apps
+                    </button>
+                    <button type="button" onclick="filterServices('ops', this)" class="service-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-bold border border-slate-300 bg-white text-navy-900 transition-all">
+                        <i class="fa-solid fa-network-wired mr-1.5"></i>NOC, DCIM & Lifecycle
+                    </button>
+                </div>
+            </div>
+
+            <!-- 12 Service Cards Grid -->
+            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. 24/7/365 Helpdesk, NOC & SOC Operations -->
+                <article data-category="ops security" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-brandOrange-500 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-navy-50 text-navy-800">24/7/365 Core</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">24/7/365 Helpdesk, NOC & SOC Operations</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Rapid workstation & ITIL ticketing resolution, proactive network diagnostics preventing bandwidth drops, and continuous perimeter defense.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Tiered Helpdesk & Service Desk (ServiceNow, Jira, FreshService, Zendesk)</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Proactive Network Operations Center (NOC) telemetry</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Monthly SLA & KPI analytical response audits</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">Zero-Downtime SLA</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('24/7/365 Helpdesk, NOC & SOC Operations')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Request Demo <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. Advanced Cybersecurity & Risk Mitigation -->
+                <article data-category="security" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-brandOrange-50 text-brandOrange-700">Enterprise Defense</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Advanced Cybersecurity & Risk Mitigation</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Proactive defense posture eliminating hidden vulnerabilities through continuous scanning, diagnostics, and live threat hunting.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Continuous vulnerability scanning & configuration audits</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Diagnostic internal auditing eliminating operational risk</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>24/7 SOC active threat hunting & rapid containment</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">Proactive Risk Assessment</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Advanced Cybersecurity & Risk Mitigation')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Free Security Audit <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. Threat Hawk Enterprise SIEM Solution -->
+                <article data-category="security" class="service-card bg-navy-900 text-white rounded-2xl p-6 border-2 border-brandOrange-500 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-radar"></i>
+                            </div>
+                            <span class="text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded bg-brandOrange-500 text-white">Flagship SIEM/SOAR</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-white mb-2">Threat Hawk Enterprise SIEM Solution</h3>
+                        <p class="text-slate-300 text-sm mb-4">
+                            Powered by Techcyber: Unified log ingestion with AI behavioral analytics and SOAR automated host isolation backed 24/7/365.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-200 border-t border-white/10 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-400 mt-0.5"></i><span>Real-time telemetry across cloud, endpoints & apps</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-400 mt-0.5"></i><span>AI ransomware & zero-day detection + SOAR auto-response</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-400 mt-0.5"></i><span>SaaS SIEM or Hybrid deployment with GRC dashboards</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-white/10 flex justify-between items-center">
+                        <a href="#threat-hawk" class="text-xs font-semibold text-brandOrange-400 hover:underline">Explore Architecture</a>
+                        <a href="#consultation" onclick="selectConsultationTopic('Threat Hawk Enterprise SIEM Solution')" class="text-xs font-bold bg-brandOrange-500 hover:bg-brandOrange-600 text-white px-3 py-1.5 rounded-lg inline-flex items-center gap-1">
+                            Book SIEM Demo <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. Regulatory Compliance & Governance -->
+                <article data-category="security healthcare" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-brandOrange-500 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-navy-50 text-navy-800">GRC & Legal</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Regulatory Compliance & Governance</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Systematic enforcement and sustained technical documentation for clean, stress-free regulatory evaluations worldwide.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Strict alignment with HIPAA, PCI DSS, SOC 2 & CMMC</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Immutable digital audit trail logs & cryptographic defense</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Continuous policy enforcement & audit readiness</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">HIPAA • PCI • CMMC</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Regulatory Compliance & Governance')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Consult Specialist <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 5. Clinical Healthcare IT (EMR & EHR Support) -->
+                <article data-category="healthcare" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-hospital-user"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-emerald-50 text-emerald-700">Clinical IT</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Clinical Healthcare IT (EMR & EHR Support)</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Certified offshore engineers configure, scale, and maintain mission-critical clinical applications with strict HIPAA compliance.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>EPIC Systems, Cerner, NextGen Healthcare, eClinicalWorks</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Quadramed, Athenahealth, MEDITECH & AdvancedMD</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Zero clinical downtime & multi-national regulatory compliance</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">8+ Major EHR Platforms</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Clinical Healthcare IT (EMR & EHR Support)')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Schedule Consult <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 6. Healthcare Interoperability & PDM -->
+                <article data-category="healthcare cloud" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-brandOrange-500 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-arrows-spin"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-navy-50 text-navy-800">Interoperability</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Healthcare Interoperability & PDM</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Provider Data Management (PDM) lifecycle tracking and automated data pipelines eliminating manual clinical bottlenecks.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>EHR, Credentialing, Claims Processing & CRM Directories</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Clinical Standards: HL7, FHIR, XML & RESTful APIs</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Automated SFTP, ETL & Webhook exchange pipelines</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">HL7 • FHIR • ETL</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Healthcare Interoperability & PDM')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Request Demo <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 7. AI Innovation & Cloud Modernization -->
+                <article data-category="cloud" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-brandOrange-50 text-brandOrange-700">AI & Cloud</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">AI Innovation & Cloud Modernization</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Intelligent AIOps observability, seamless multi-cloud migrations, CI/CD automation, and resilient Backup & Disaster Recovery.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>AI & Automation: Dynatrace, BigPanda, Cursor, ServiceNow AI, Chatbase NLP</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Azure, AWS, GCP migrations & Jenkins CI/CD pipelines</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Automated BDR, OS security patching & anomaly tracking</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">AWS • Azure • GCP</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('AI Innovation & Cloud Modernization')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Explore Cloud <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 8. Business Applications & Analytics Integration -->
+                <article data-category="cloud" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-brandOrange-500 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-navy-50 text-navy-800">ERP, CRM & BI</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Business Applications & Analytics Integration</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            End-to-end ERP/CRM configuration, workflow automation, and lifecycle management for enterprise BI & accounting suites.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>ERP & CRM: Salesforce, Microsoft Dynamics 365, NetSuite, SAP, Zoho</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>BI & Analytics: Power BI & SAS Analytics</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Accounting: QuickBooks, Zoho Finance, FreshBooks & Wave</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">Salesforce • SAP • NetSuite</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Business Applications & Analytics Integration')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Schedule Consult <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 9. Zero-Trust Network Infrastructure & Identity -->
+                <article data-category="security ops" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-fingerprint"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-brandOrange-50 text-brandOrange-700">Zero-Trust IAM</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Zero-Trust Network Infrastructure & Identity</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Hardened network perimeter architecture, zero-trust identity governance, and automated endpoint & mobile fleet security.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Firewalls, Secure VPNs, Switches/Routers, WAPs & SD-WAN</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>IAM & SSO: Okta Identity Cloud, Duo Security MFA & Directory Sync</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Endpoint & MDM: Tanium, BigFix, Intune, MobileIron & Ping</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">Okta • Duo • Intune • Tanium</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Zero-Trust Network Infrastructure & Identity')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Request Audit <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 10. Datacenter (DCIM) & Surveillance Support -->
+                <article data-category="ops" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-brandOrange-500 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-navy-50 text-navy-800">Physical & Virtual</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Datacenter (DCIM) & Surveillance Support</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Continuous physical and virtual infrastructure uptime monitoring, rapid outage resolution, and 24/7 server-room surveillance.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>DCIM Tooling: DataDog, Zabbix, PRTG & ManageEngine OpManager</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Continuous hardware refreshes & immediate outage resolution</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>24/7/365 surveillance logs of server-room access & perimeters</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">DataDog • Zabbix • PRTG</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Datacenter (DCIM) & Surveillance Support')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Schedule Consult <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 11. Asset Lifecycle (HAM/SAM) & Vendor Transition -->
+                <article data-category="ops" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-brandOrange-50 text-brandOrange-700">HAM & SAM</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Asset Lifecycle (HAM/SAM) & Vendor Transition</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Complete hardware asset and software license optimization paired with structured playbooks for frictionless vendor onboarding.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Hardware Asset (HAM) & Software License (SAM) optimization</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Seamless vendor transition operational playbooks</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Centralized historical institutional data repositories</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">License & Asset ROI</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Asset Lifecycle (HAM/SAM) & Vendor Transition')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Request Audit <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 12. Agile Project Delivery & Full Lifecycle Migrations -->
+                <article data-category="cloud ops" class="service-card bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-enterprise hover:border-navy-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-navy-900 text-brandOrange-500 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-navy-50 text-navy-800">PMO & Delivery</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Agile Project Delivery & Enterprise Migrations</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Disciplined Agile & Scrum program execution delivering complex multi-cloud, cybersecurity, and enterprise data migrations on schedule.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-700 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Agile & Scrum sprint tracking via MS Project, Jira & Confluence</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Full lifecycle multi-cloud & cybersecurity transformations</span></li>
+                            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-brandOrange-500 mt-0.5"></i><span>Zero-data-loss enterprise & clinical database migrations</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center">
+                        <span class="text-xs font-semibold text-navy-800">MS Project • Jira • Confluence</span>
+                        <a href="#consultation" onclick="selectConsultationTopic('Agile Project Delivery & Enterprise Migrations')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Discuss Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. THREAT HAWK ENTERPRISE SIEM SPOTLIGHT -->
+    <section id="threat-hawk" class="py-20 bg-navy-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 cyber-grid opacity-60 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brandOrange-500/20 border border-brandOrange-500/40 text-brandOrange-400 text-xs font-extrabold uppercase tracking-wider">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Powered by Techcyber</span>
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+                        Threat Hawk <span class="text-brandOrange-500">Enterprise SIEM</span> Solution
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        Next-generation security telemetry engineered for real-time threat visibility, AI behavioral anomaly detection, and automated SOAR containment—available as a <strong class="text-white">fully managed SaaS SIEM</strong> or <strong class="text-white">hybrid enterprise deployment</strong> backed 24/7/365 by our SOC.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-navy-900/90 border border-white/10 rounded-xl p-4">
+                            <div class="text-brandOrange-400 font-bold text-sm flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-database"></i> SIEM Unified Log Ingestion
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed">Real-time telemetry ingestion across multi-cloud workloads, endpoints, firewalls, and clinical apps.</p>
+                        </div>
+                        <div class="bg-navy-900/90 border border-white/10 rounded-xl p-4">
+                            <div class="text-brandOrange-400 font-bold text-sm flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-brain"></i> AI-Driven Threat Detection
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed">Behavioral machine learning detecting ransomware encryption patterns and zero-day exploits early.</p>
+                        </div>
+                        <div class="bg-navy-900/90 border border-white/10 rounded-xl p-4">
+                            <div class="text-brandOrange-400 font-bold text-sm flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-robot"></i> SOAR Automated Response
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed">Instant automated host isolation and credential quarantine with immediate 24/7 SOC escalation.</p>
+                        </div>
+                        <div class="bg-navy-900/90 border border-white/10 rounded-xl p-4">
+                            <div class="text-brandOrange-400 font-bold text-sm flex items-center gap-2 mb-1">
+                                <i class="fa-solid fa-file-shield"></i> GRC Compliance Reporting
+                            </div>
+                            <p class="text-xs text-slate-300 leading-relaxed">One-click audit-ready compliance dashboards for HIPAA, PCI DSS, SOC 2, and CMMC frameworks.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 flex flex-wrap gap-4">
+                        <a href="#consultation" onclick="selectConsultationTopic('Threat Hawk Enterprise SIEM Live Demo')" class="inline-flex items-center gap-2 bg-brandOrange-500 hover:bg-brandOrange-600 text-white font-bold px-6 py-3.5 rounded-xl shadow-glow-orange transition-all">
+                            <i class="fa-solid fa-play"></i>
+                            <span>Request Live Threat Hawk Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Simulated SIEM Telemetry Console -->
+                <div class="lg:col-span-6">
+                    <div class="bg-[#041126] border border-slate-700/80 rounded-2xl shadow-2xl overflow-hidden">
+                        <div class="bg-navy-900 px-5 py-3.5 border-b border-slate-700/80 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                                <span class="ml-2 text-xs font-mono font-semibold text-slate-300">THREAT_HAWK_SIEM // LIVE_SOC_STREAM</span>
+                            </div>
+                            <div class="flex gap-1.5">
+                                <button type="button" onclick="switchSiemMode('saas', this)" class="siem-mode-btn px-2.5 py-1 rounded text-[11px] font-bold bg-brandOrange-500 text-white">Managed SaaS</button>
+                                <button type="button" onclick="switchSiemMode('hybrid', this)" class="siem-mode-btn px-2.5 py-1 rounded text-[11px] font-bold bg-white/10 text-slate-300 hover:bg-white/20">Hybrid On-Prem</button>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-5 font-mono text-xs">
+                            <div id="siem-mode-banner" class="bg-navy-900/80 border border-brandOrange-500/30 rounded-lg p-3 text-slate-200 flex items-center justify-between">
+                                <span><strong class="text-brandOrange-400">Deployment:</strong> Fully Managed Cloud SaaS SIEM</span>
+                                <span class="text-emerald-400 font-bold">● INGESTING</span>
+                            </div>
+
+                            <!-- Simulated Metrics -->
+                            <div class="grid grid-cols-3 gap-3 text-center">
+                                <div class="bg-navy-900/60 p-3 rounded-lg border border-white/5">
+                                    <div class="text-slate-400 text-[10px]">EVENTS / SEC</div>
+                                    <div class="text-lg font-bold text-white mt-0.5">48,920</div>
+                                </div>
+                                <div class="bg-navy-900/60 p-3 rounded-lg border border-white/5">
+                                    <div class="text-slate-400 text-[10px]">SOAR ISOLATIONS</div>
+                                    <div class="text-lg font-bold text-brandOrange-400 mt-0.5">0.4 sec</div>
+                                </div>
+                                <div class="bg-navy-900/60 p-3 rounded-lg border border-white/5">
+                                    <div class="text-slate-400 text-[10px]">GRC AUDIT SCORE</div>
+                                    <div class="text-lg font-bold text-emerald-400 mt-0.5">100%</div>
+                                </div>
+                            </div>
+
+                            <!-- Event Log Stream -->
+                            <div class="space-y-2.5 bg-black/40 p-4 rounded-xl border border-white/5">
+                                <div class="flex items-start justify-between gap-2 text-[11px]">
+                                    <span class="text-emerald-400">[OK]</span>
+                                    <span class="text-slate-300 flex-1">HL7/FHIR Clinical Gateway TLS 1.3 integrity verified</span>
+                                    <span class="text-slate-500">HIPAA</span>
+                                </div>
+                                <div class="flex items-start justify-between gap-2 text-[11px]">
+                                    <span class="text-brandOrange-400">[SOAR]</span>
+                                    <span class="text-slate-200 flex-1">Anomalous lateral SMB probe blocked & host quarantined</span>
+                                    <span class="text-brandOrange-400">AUTO-CONTAINED</span>
+                                </div>
+                                <div class="flex items-start justify-between gap-2 text-[11px]">
+                                    <span class="text-sky-400">[AI-ML]</span>
+                                    <span class="text-slate-300 flex-1">Zero-day behavioral baseline synced across AWS & Azure</span>
+                                    <span class="text-slate-500">SOC-2</span>
+                                </div>
+                                <div class="flex items-start justify-between gap-2 text-[11px]">
+                                    <span class="text-emerald-400">[GRC]</span>
+                                    <span class="text-slate-300 flex-1">CMMC & PCI DSS cryptographic audit log snapshot archived</span>
+                                    <span class="text-slate-500">VERIFIED</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GLOBAL ECOSYSTEM & PLATFORM MASTERY -->
+    <section id="ecosystem" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brandOrange-600 bg-brandOrange-50 px-3 py-1 rounded-full border border-brandOrange-200">
+                    Global Ecosystem
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-navy-900 mt-3">
+                    Technical Expertise & Enterprise Platform Mastery
+                </h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    Our certified engineers integrate seamlessly into your existing technology stack across cloud, security, clinical healthcare, and ITSM ecosystems.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Category 1: Cloud & Networking -->
+                <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-lg bg-navy-900 text-brandOrange-500 flex items-center justify-center">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-navy-900">Cloud & Networking</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Microsoft Azure</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Amazon Web Services (AWS)</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Google Cloud Platform (GCP)</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Palo Alto Networks</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Cisco Enterprise</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Fortinet FortiGate</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">SD-WAN Architecture</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Enterprise IPsec/SSL VPN</span>
+                    </div>
+                </div>
+
+                <!-- Category 2: Cybersecurity, AI & DCIM -->
+                <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-lg bg-brandOrange-500 text-white flex items-center justify-center">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-navy-900">Cybersecurity, AI & DCIM</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-navy-900 text-white rounded-lg text-sm font-bold shadow-xs">Threat Hawk SIEM</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">CrowdStrike Falcon</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Splunk Enterprise</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Dynatrace AIOps</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">DataDog</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Okta Identity Cloud</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Duo Security MFA</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Zabbix & PRTG</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Enterprise & Clinical -->
+                <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-lg bg-brandOrange-500 text-white flex items-center justify-center">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-navy-900">Enterprise & Clinical Healthcare</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">EPIC Systems</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Oracle Cerner</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Athenahealth</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">NextGen & MEDITECH</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Oracle NetSuite</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">SAP Enterprise Suites</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Salesforce CRM</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Microsoft Dynamics 365</span>
+                    </div>
+                </div>
+
+                <!-- Category 4: Systems, DevOps & ITSM -->
+                <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-10 h-10 rounded-lg bg-navy-900 text-brandOrange-500 flex items-center justify-center">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-navy-900">Systems, DevOps & ITSM</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Microsoft Intune</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Tanium Endpoint</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Jenkins CI/CD</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">GitHub Enterprise</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Microsoft Power BI</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">ServiceNow ITSM</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Atlassian Jira & Confluence</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-sm font-semibold text-navy-900 shadow-xs">Zendesk & FreshService</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FLEXIBLE PRICING & ENGAGEMENT MODELS -->
+    <section id="pricing" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brandOrange-600 bg-brandOrange-100/80 px-3 py-1 rounded-full">
+                    Tailored Financial Structuring
+                </span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-navy-900 mt-3">
+                    Flexible Pricing & Engagement Models
+                </h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    Transparent, predictable commercial structures designed to scale linearly with your workforce, infrastructure footprint, or project roadmap.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+                <!-- Model 1: Per User -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brandOrange-500 shadow-sm hover:shadow-enterprise transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-navy-50 text-navy-900 flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Per User Model</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Predictable per-headcount pricing that scales linearly as your global workforce expands or adjusts.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#consultation" onclick="selectConsultationTopic('Per User Pricing Model Inquiry')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Request Quote <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 2: Per Device -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brandOrange-500 shadow-sm hover:shadow-enterprise transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-navy-50 text-navy-900 flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Per Device Model</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Granular infrastructure pricing mapped directly to active servers, workstations, network nodes, and endpoints.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#consultation" onclick="selectConsultationTopic('Per Device Pricing Model Inquiry')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Request Quote <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 3: Bundled Service (Featured) -->
+                <div class="bg-navy-900 text-white rounded-2xl p-6 border-2 border-brandOrange-500 shadow-lg flex flex-col justify-between relative">
+                    <span class="absolute -top-3 right-4 bg-brandOrange-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
+                        Most Popular
+                    </span>
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-brandOrange-500 text-white flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-white mb-2">Bundled Service</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Consolidated cross-functional packages (e.g., 24/7 NOC + SOC + Threat Hawk SIEM) engineered for maximum economies of scale.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10">
+                        <a href="#consultation" onclick="selectConsultationTopic('Bundled Managed Services Package')" class="text-xs font-bold text-brandOrange-400 hover:text-brandOrange-300 inline-flex items-center gap-1">
+                            Build Custom Bundle <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 4: Flat Monthly Rate -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brandOrange-500 shadow-sm hover:shadow-enterprise transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-navy-50 text-navy-900 flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Flat Monthly Rate</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Comprehensive 24/7/365 operational coverage and dedicated engineering squads under one fixed, predictable monthly fee.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#consultation" onclick="selectConsultationTopic('Flat Monthly Retainer Inquiry')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Request Quote <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Model 5: Project-Based Billing -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brandOrange-500 shadow-sm hover:shadow-enterprise transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-navy-50 text-navy-900 flex items-center justify-center text-lg mb-4">
+                            <i class="fa-solid fa-flag-checkered"></i>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-navy-900 mb-2">Project-Based Billing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Milestone-driven engagements for standalone small-scale, medium-term, and enterprise cloud or EHR migrations.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100">
+                        <a href="#consultation" onclick="selectConsultationTopic('Project-Based Transformation Billing')" class="text-xs font-bold text-brandOrange-600 hover:text-brandOrange-700 inline-flex items-center gap-1">
+                            Scope a Project <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT & FREE CONSULTATION / DEMO SECTION -->
+    <section id="consultation" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-navy-900 rounded-3xl overflow-hidden shadow-2xl border border-navy-800">
+                <div class="grid lg:grid-cols-12">
+                    <!-- Left Column: Direct Company Contact Info -->
+                    <div class="lg:col-span-5 bg-navy-950 text-white p-8 sm:p-12 flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-brandOrange-500/15 rounded-full blur-3xl pointer-events-none"></div>
+                        
+                        <div class="relative z-10 space-y-6">
+                            <span class="inline-block px-3 py-1 rounded-full bg-brandOrange-500 text-white text-xs font-extrabold uppercase tracking-wider">
+                                Schedule Your Complimentary Audit
+                            </span>
+                            <h2 class="font-display text-3xl sm:text-4xl font-extrabold leading-tight">
+                                Ready to Transform Your IT Operations?
+                            </h2>
+                            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                                Connect directly with Techcyber's global solutions architects for a complimentary IT & cybersecurity infrastructure audit, pricing proposal, or live Threat Hawk SIEM demo.
+                            </p>
+
+                            <!-- Prominent Official Company Email Box -->
+                            <div class="bg-navy-900/90 border border-brandOrange-500/40 rounded-2xl p-5 space-y-3">
+                                <div class="text-xs font-bold uppercase tracking-wider text-brandOrange-400">
+                                    Official Consultation & Demo Desk
+                                </div>
+                                <a href="mailto:techcybermsp@consultant.com?subject=Techcyber%20Free%20Consultation%20%2F%20Demo%20Request" class="block text-lg sm:text-xl font-extrabold text-white hover:text-brandOrange-400 transition-colors break-all">
+                                    techcybermsp@consultant.com
+                                </a>
+                                <div class="flex flex-wrap gap-2.5 pt-1">
+                                    <a href="mailto:techcybermsp@consultant.com?subject=Techcyber%20Free%20Consultation%20%2F%20Demo%20Request" class="inline-flex items-center gap-2 bg-brandOrange-500 hover:bg-brandOrange-600 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                        <span>Email Directly</span>
+                                    </a>
+                                    <button type="button" onclick="copyEmail('contact-copy-btn')" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition-colors">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <span id="contact-copy-btn">Copy Email Address</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Website & Global Coverage -->
+                            <div class="space-y-3 pt-2 text-sm text-slate-300">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-brandOrange-400">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">Corporate Portal</div>
+                                        <a href="https://techcyber.cloud/" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-brandOrange-400">
+                                            https://techcyber.cloud/
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-brandOrange-400">
+                                        <i class="fa-solid fa-earth-americas"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">Service Coverage</div>
+                                        <div class="font-semibold text-white">Worldwide 24/7/365 Offshore Delivery</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative z-10 pt-8 mt-8 border-t border-white/10 text-xs text-slate-400">
+                            Response Guarantee: A certified Techcyber solutions engineer responds to all consultation and demo requests within 2 business hours.
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive Consultation & Demo Request Form -->
+                    <div class="lg:col-span-7 p-8 sm:p-12 bg-white text-slate-800">
+                        <h3 class="font-display text-2xl font-extrabold text-navy-900 mb-2">
+                            Request a Free Consultation or Live Demo
+                        </h3>
+                        <p class="text-sm text-slate-600 mb-6">
+                            Complete the brief below to generate your pre-filled consultation request directly to <strong class="text-navy-900">techcybermsp@consultant.com</strong>.
+                        </p>
+
+                        <form id="consultation-form" class="space-y-4" novalidate>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="fullName" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">Full Name *</label>
+                                    <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 outline-none text-sm transition-all">
+                                </div>
+                                <div>
+                                    <label for="companyName" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">Company / Organization *</label>
+                                    <input type="text" id="companyName" name="companyName" required placeholder="Acme Healthcare Systems" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 outline-none text-sm transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="workEmail" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">Work Email *</label>
+                                    <input type="email" id="workEmail" name="workEmail" required placeholder="jane@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 outline-none text-sm transition-all">
+                                </div>
+                                <div>
+                                    <label for="serviceInterest" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">Service of Interest *</label>
+                                    <select id="serviceInterest" name="serviceInterest" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 outline-none text-sm bg-white transition-all">
+                                        <option value="Complimentary IT & Cybersecurity Audit">Complimentary IT & Cybersecurity Audit</option>
+                                        <option value="24/7/365 Helpdesk, NOC & SOC Operations">24/7/365 Helpdesk, NOC & SOC Operations</option>
+                                        <option value="Threat Hawk Enterprise SIEM Solution">Threat Hawk Enterprise SIEM Solution (Live Demo)</option>
+                                        <option value="Advanced Cybersecurity & Risk Mitigation">Advanced Cybersecurity & Risk Mitigation</option>
+                                        <option value="Regulatory Compliance (HIPAA, PCI DSS, SOC 2, CMMC)">Regulatory Compliance (HIPAA, PCI DSS, SOC 2, CMMC)</option>
+                                        <option value="Clinical Healthcare IT (EMR & EHR Support)">Clinical Healthcare IT (EPIC, Cerner, Athena, etc.)</option>
+                                        <option value="Healthcare Interoperability & PDM (HL7/FHIR)">Healthcare Interoperability & PDM (HL7/FHIR)</option>
+                                        <option value="AI Innovation & Cloud Modernization (AWS/Azure/GCP)">AI Innovation & Cloud Modernization (AWS/Azure/GCP)</option>
+                                        <option value="Business Applications & Analytics (ERP/CRM/BI)">Business Applications & Analytics (ERP/CRM/BI)</option>
+                                        <option value="Zero-Trust Network Infrastructure & Identity">Zero-Trust Network Infrastructure & Identity</option>
+                                        <option value="Datacenter (DCIM) & Surveillance Support">Datacenter (DCIM) & Surveillance Support</option>
+                                        <option value="Flexible Pricing & Engagement Models">Flexible Pricing & Engagement Models</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="projectDetails" class="block text-xs font-bold uppercase tracking-wider text-navy-900 mb-1.5">Environment Overview & Goals *</label>
+                                <textarea id="projectDetails" name="projectDetails" rows="4" required placeholder="Tell us about your current IT/clinical environment, number of users or endpoints, compliance requirements, or preferred demo schedule..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 outline-none text-sm transition-all"></textarea>
+                            </div>
+
+                            <!-- Inline Status / Notification Message Box (No alert()) -->
+                            <div id="form-feedback" class="hidden rounded-xl p-4 text-sm font-medium"></div>
+
+                            <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+                                <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brandOrange-500 hover:bg-brandOrange-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-glow-orange transition-all">
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                    <span>Send Consultation Request</span>
+                                </button>
+                                <button type="button" onclick="copyFormattedBrief()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-navy-900 font-semibold px-5 py-3.5 rounded-xl transition-all text-sm">
+                                    <i class="fa-regular fa-clipboard"></i>
+                                    <span>Copy Brief to Clipboard</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ENTERPRISE FOOTER -->
+    <footer class="bg-navy-950 text-slate-300 pt-16 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                <!-- Brand Column -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="inline-block bg-white px-4 py-2.5 rounded-xl">
+                        <svg class="h-10 w-auto" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Techcyber Footer Logo">
+                            <path d="M12 24C34 12 62 7 82 7C102 7 128 12 148 22V33H134C116 25 97 22 82 22V73H66V22C50 23 35 27 25 32C25 60 44 82 80 94V107C34 93 12 64 12 24Z" fill="#0A2E65"/>
+                            <path d="M88 38H148V50H102V85C113 79 122 70 127 59H143C135 81 115 98 88 107V38Z" fill="#F97316"/>
+                            <text x="162" y="72" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="37" letter-spacing="-0.8">
+                                <tspan fill="#F97316">Tech</tspan><tspan fill="#0A2E65">cyber</tspan>
+                            </text>
+                            <text x="164" y="92" font-family="'Inter', sans-serif" font-weight="700" font-size="9.5" letter-spacing="2.2" fill="#475569">
+                                GLOBAL IT MSP &amp; SOC
+                            </text>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-slate-400 max-w-md leading-relaxed">
+                        Your 24/7 Offshore IT MSP Partner. Delivering seamless, enterprise-grade Managed IT Services, Threat Hawk SIEM, Clinical Healthcare IT, and Cloud Modernization to organizations worldwide.
+                    </p>
+                    <div class="pt-1 space-y-1.5 text-sm">
+                        <div>
+                            <a href="mailto:techcybermsp@consultant.com" class="text-brandOrange-400 hover:text-brandOrange-300 font-bold inline-flex items-center gap-2">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>techcybermsp@consultant.com</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://techcyber.cloud/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white inline-flex items-center gap-2">
+                                <i class="fa-solid fa-globe text-brandOrange-500"></i>
+                                <span>https://techcyber.cloud/</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Navigation -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="font-display font-bold text-white uppercase text-xs tracking-wider">Company & Solutions</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#advantage" class="hover:text-brandOrange-400 transition-colors">The Techcyber Advantage</a></li>
+                        <li><a href="#services" class="hover:text-brandOrange-400 transition-colors">Global Managed IT Services</a></li>
+                        <li><a href="#threat-hawk" class="hover:text-brandOrange-400 transition-colors">Threat Hawk Enterprise SIEM</a></li>
+                        <li><a href="#ecosystem" class="hover:text-brandOrange-400 transition-colors">Global Technology Ecosystem</a></li>
+                        <li><a href="#pricing" class="hover:text-brandOrange-400 transition-colors">Pricing & Engagement Models</a></li>
+                        <li><a href="#consultation" class="hover:text-brandOrange-400 transition-colors">Schedule Complimentary Audit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Core Practice Areas -->
+                <div class="lg:col-span-4 space-y-3">
+                    <h4 class="font-display font-bold text-white uppercase text-xs tracking-wider">Core Worldwide Practices</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>24/7/365 Helpdesk, NOC & SOC Operations</li>
+                        <li>Clinical Healthcare IT (EPIC, Cerner, HL7/FHIR)</li>
+                        <li>Regulatory Compliance (HIPAA, PCI DSS, SOC 2, CMMC)</li>
+                        <li>Multi-Cloud Modernization (Azure, AWS, GCP)</li>
+                        <li>Zero-Trust Identity & Endpoint Security (Okta, Intune)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; <span id="current-year"></span> Techcyber. All rights reserved. Worldwide 24/7/365 Managed IT & Cybersecurity Operations.</p>
+                <p>For Free Consultation or Demo: <a href="mailto:techcybermsp@consultant.com" class="text-slate-300 hover:text-brandOrange-400 font-semibold">techcybermsp@consultant.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Banner -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 hidden bg-navy-900 text-white border border-brandOrange-500 px-5 py-3.5 rounded-xl shadow-2xl flex items-center gap-3 text-sm font-semibold">
+        <i class="fa-solid fa-circle-check text-brandOrange-500 text-lg"></i>
+        <span id="toast-message">Action completed</span>
+    </div>
+
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Navigation Drawer Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Toast Helper
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.textContent = message;
+            toast.classList.remove('hidden');
+            clearTimeout(window._toastTimer);
+            window._toastTimer = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+
+        // Copy Email to Clipboard using reliable textarea fallback
+        function copyTextToClipboard(text) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            tempInput.style.position = 'fixed';
+            tempInput.style.opacity = '0';
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+            } catch (err) {
+                console.error('Copy command failed', err);
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        function copyEmail(badgeElementId) {
+            const email = 'techcybermsp@consultant.com';
+            copyTextToClipboard(email);
+            showToast('Copied techcybermsp@consultant.com to clipboard!');
+            if (badgeElementId) {
+                const el = document.getElementById(badgeElementId);
+                if (el) {
+                    const originalText = el.textContent;
+                    el.textContent = 'Copied!';
+                    setTimeout(() => { el.textContent = originalText; }, 2200);
+                }
+            }
+        }
+
+        // Interactive Service Domain Filtering
+        function filterServices(category, btnElement) {
+            // Update active button styling
+            document.querySelectorAll('.service-tab-btn').forEach(btn => btn.classList.remove('active'));
+            if (btnElement) btnElement.classList.add('active');
+
+            // Show/hide cards based on category attribute
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                const cardCategories = card.getAttribute('data-category') || '';
+                if (category === 'all' || cardCategories.includes(category)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Pre-select Service in Consultation Form when clicking a service card CTA
+        function selectConsultationTopic(topicName) {
+            const selectEl = document.getElementById('serviceInterest');
+            if (!selectEl) return;
+            for (let i = 0; i < selectEl.options.length; i++) {
+                if (selectEl.options[i].value.toLowerCase().includes(topicName.toLowerCase().slice(0, 18))) {
+                    selectEl.selectedIndex = i;
+                    return;
+                }
+            }
+            // If exact option isn't in the list, prepend a custom option
+            const customOpt = document.createElement('option');
+            customOpt.value = topicName;
+            customOpt.textContent = topicName;
+            selectEl.insertBefore(customOpt, selectEl.firstChild);
+            selectEl.selectedIndex = 0;
+        }
+
+        // Interactive Threat Hawk SIEM Mode Switcher
+        function switchSiemMode(mode, btn) {
+            document.querySelectorAll('.siem-mode-btn').forEach(b => {
+                b.classList.remove('bg-brandOrange-500', 'text-white');
+                b.classList.add('bg-white/10', 'text-slate-300');
+            });
+            btn.classList.remove('bg-white/10', 'text-slate-300');
+            btn.classList.add('bg-brandOrange-500', 'text-white');
+
+            const banner = document.getElementById('siem-mode-banner');
+            if (mode === 'saas') {
+                banner.innerHTML = '<span><strong class="text-brandOrange-400">Deployment:</strong> Fully Managed Cloud SaaS SIEM</span><span class="text-emerald-400 font-bold">● INGESTING</span>';
+            } else {
+                banner.innerHTML = '<span><strong class="text-brandOrange-400">Deployment:</strong> Hybrid On-Premises + 24/7 Cloud SOC</span><span class="text-emerald-400 font-bold">● SYNCED</span>';
+            }
+        }
+
+        // Build formatted email body from form inputs
+        function buildConsultationEmailData() {
+            const fullName = document.getElementById('fullName').value.trim();
+            const companyName = document.getElementById('companyName').value.trim();
+            const workEmail = document.getElementById('workEmail').value.trim();
+            const serviceInterest = document.getElementById('serviceInterest').value;
+            const projectDetails = document.getElementById('projectDetails').value.trim();
+
+            const subject = `Techcyber Free Consultation / Demo Request - ${companyName || 'New Inquiry'}`;
+            const body = [
+                `Hello Techcyber Team,`,
+                ``,
+                `I would like to request a free consultation / demo.`,
+                ``,
+                `--- CONTACT & INQUIRY DETAILS ---`,
+                `Full Name: ${fullName}`,
+                `Company / Organization: ${companyName}`,
+                `Work Email: ${workEmail}`,
+                `Service of Interest: ${serviceInterest}`,
+                ``,
+                `Environment Overview & Goals:`,
+                `${projectDetails}`,
+                ``,
+                `Best regards,`,
+                `${fullName}`
+            ].join('\n');
+
+            return { fullName, companyName, workEmail, serviceInterest, projectDetails, subject, body };
+        }
+
+        // Copy Formatted Brief to Clipboard
+        function copyFormattedBrief() {
+            const data = buildConsultationEmailData();
+            if (!data.fullName || !data.workEmail) {
+                showToast('Please enter your Name and Work Email first.');
+                return;
+            }
+            const fullText = `To: techcybermsp@consultant.com\nSubject: ${data.subject}\n\n${data.body}`;
+            copyTextToClipboard(fullText);
+            showToast('Consultation brief copied! Ready to paste into any email client.');
+        }
+
+        // Form Validation & Direct Mailto Launch
+        document.getElementById('consultation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const feedback = document.getElementById('form-feedback');
+            const data = buildConsultationEmailData();
+
+            if (!data.fullName || !data.companyName || !data.workEmail || !data.projectDetails) {
+                feedback.className = 'rounded-xl p-4 text-sm font-medium bg-rose-50 text-rose-800 border border-rose-200 block';
+                feedback.innerHTML = '<i class="fa-solid fa-triangle-exclamation mr-1.5"></i> Please complete all required fields (Name, Company, Work Email, and Environment Overview).';
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.workEmail)) {
+                feedback.className = 'rounded-xl p-4 text-sm font-medium bg-rose-50 text-rose-800 border border-rose-200 block';
+                feedback.innerHTML = '<i class="fa-solid fa-triangle-exclamation mr-1.5"></i> Please enter a valid corporate email address.';
+                return;
+            }
+
+            const mailtoUrl = `mailto:techcybermsp@consultant.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(data.body)}`;
+
+            feedback.className = 'rounded-xl p-4 text-sm font-medium bg-emerald-50 text-emerald-900 border border-emerald-200 block';
+            feedback.innerHTML = `
+                <div class="font-bold mb-1"><i class="fa-solid fa-circle-check text-emerald-600 mr-1.5"></i>Your consultation request is ready!</div>
+                <p class="text-xs text-emerald-800 mb-2">Opening your default email client addressed to <strong>techcybermsp@consultant.com</strong>. If it does not open automatically, click the direct link below:</p>
+                <a href="${mailtoUrl}" class="inline-flex items-center gap-1.5 text-xs font-bold underline text-navy-900 hover:text-brandOrange-600">
+                    Open Pre-Filled Email to techcybermsp@consultant.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            `;
+
+            showToast('Launching email client to techcybermsp@consultant.com...');
+            window.location.href = mailtoUrl;
+        });
+    </script>
+</body>
+</html>
